@@ -1,0 +1,47 @@
+# Server properties
+server:
+  port: 8761
+
+# Information for the info endpoint
+info:
+  app:
+    environment: DEV
+    name: Eureka Server
+    description: Eureka Server Local Instance
+
+# Spring application properties
+spring:
+  application:
+    name: eurekaserver
+  config:
+    import:
+      - optional:configserver:${CONFIG_SERVER_URL}
+      - optional:file:./env.properties
+
+# Eureka server properties
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+# Management properties
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info, health
+
+# Logging properties
+logging:
+  level:
+    root: DEBUG
+    com.proactivetechie: DEBUG
+    org.springframework: DEBUG
+    org.hibernate: DEBUG
