@@ -30,11 +30,9 @@ The project utilises a suite of modern technologies to ensure robust and scalabl
 
 To successfully set up and run the server, ensure you have the following installed:
 
-- <a href="https://www.oracle.com/uk/java/technologies/downloads/#java17" target="_blank">Java JDK 17</a>
-- <a href="https://gradle.org/" target="_blank">Gradle</a>
-- <a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> (optional)
-
-
+- [Java JDK 17](https://www.oracle.com/uk/java/technologies/downloads/#java17)
+- [Gradle](https://gradle.org/)
+- [Docker](https://docs.docker.com/get-docker/) (optional)
 
 ## Installation
 
@@ -64,7 +62,7 @@ This project is private and proprietary. Unauthorised copying, modification, dis
 
 ## Contact
 
-<p>For any questions or clarifications about the project, please reach out to the project owner via <a href="https://www.mariuszilinskas.com" target="_blank">www.mariuszilinskas.com</a>.</p>
+For any questions or clarifications about the project, please reach out to the project owner via [www.mariuszilinskas.com](https://www.mariuszilinskas.com).
 
 Marius Zilinskas
 
