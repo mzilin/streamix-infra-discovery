@@ -26,10 +26,17 @@ ext {
 }
 
 dependencies {
+    // Core Spring Boot
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // Spring Cloud-related
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+
+    // Development only
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
