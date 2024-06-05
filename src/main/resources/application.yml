@@ -41,7 +41,7 @@ management:
 # Logging properties
 logging:
   level:
-    root: DEBUG
-    com.proactivetechie: DEBUG
-    org.springframework: DEBUG
-    org.hibernate: DEBUG
+    root: INFO
+    org.springframework: INFO
+    org.hibernate: INFO
+
