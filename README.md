@@ -11,18 +11,18 @@ The `Eureka Server` is a crucial component of the `Video Streaming Platform`, re
 The project utilises a suite of modern technologies to ensure robust and scalable service discovery:
 
 - **Spring Boot** `3.2.5`:
-    - **Actuator**: Monitors and manages the app.
+  - **Actuator**: Monitors and manages the application, providing insights into runtime operations and health.
 
 - **Spring Cloud** `2023.0.1`:
-    - **Config**: Manages externalised configuration.
-    - **Netflix Eureka Server**: Service registry for microservices.
+  - **Config**: Manages externalised configuration, allowing applications to fetch their settings from a centralized source.
+  - **Netflix Eureka Server**: Acts as a service registry for microservices, enabling them to dynamically discover and locate each other in a distributed system.
 
 - **Java** `JDK 17`: Essential for secure, portable, high-performance software development.
 
 
 ### Dependency Management
 
-- **Gradle**: Automates build, test, and deployment processes.
+- **Gradle**: A powerful build automation tool that streamlines the compilation, testing, and deployment processes for software projects.
 
 
 ### Containerization
