@@ -6,13 +6,13 @@ server:
 info:
   app:
     environment: DEV
-    name: Eureka Server
-    description: Eureka Server Local Instance
+    name: Discovery Service
+    description: Discovery Service - Local Instance
 
 # Spring application properties
 spring:
   application:
-    name: eurekaserver
+    name: discovery-service
   config:
     import:
       - optional:configserver:${CONFIG_SERVER_URL}
