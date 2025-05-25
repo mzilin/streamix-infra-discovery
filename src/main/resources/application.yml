@@ -6,13 +6,13 @@ server:
 info:
   app:
     environment: DEV
-    name: Discovery Service
+    name: ${spring.application.name}
     description: Discovery Service - Local Instance
 
 # Spring application properties
 spring:
   application:
-    name: discovery-service
+    name: infra-discovery
   config:
     import:
       - optional:configserver:${CONFIG_SERVER_URL}
