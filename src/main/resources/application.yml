@@ -43,5 +43,5 @@ logging:
   level:
     root: INFO
     org.springframework: INFO
-    org.hibernate: INFO
+    com.mariuszilinskas: INFO
 
