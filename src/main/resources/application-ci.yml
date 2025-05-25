@@ -1,0 +1,7 @@
+# Eureka server properties for CI
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
