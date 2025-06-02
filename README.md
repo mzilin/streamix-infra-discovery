@@ -82,7 +82,7 @@ Ensure you have the following installed on your machine:
     cd vsp-infra-discovery
     ```
 
-3. Build the project and run tests:
+3. Build the project:
     ```bash
     ./gradlew clean build
     ```
