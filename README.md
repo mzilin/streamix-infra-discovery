@@ -86,8 +86,13 @@ Ensure you have the following installed on your machine:
 3. Build the project and run tests:
     ```bash
     ./gradlew clean build
+   
+   
+     
     ```
 
+
+run: SPRING_PROFILES_ACTIVE=ci ./gradlew build --no-daemon
 4. Start the service:
     ```bash
     ./gradlew bootRun
@@ -98,11 +103,7 @@ Ensure you have the following installed on your machine:
 
 ### Running with Docker
 
-1. Build the JAR:
-    ```bash
-   ./gradlew clean build
-    ```
-2. Build the Docker image:
+1. Build the Docker image:
     ```bash
    docker build -t vsp-infra-discovery:latest .
     ```
