@@ -50,7 +50,6 @@ This service is built using a modern, cloud-native Java stack, optimised for rea
   - **Actuator**: Exposes app health, metrics, and monitoring endpoints.
 
 - **Spring Cloud**
-  - **Config Client**: Integrates with a centralised Spring Cloud Config Server for dynamic configuration management.
   - **Netflix Eureka Server**: Enables service registration and discovery for dynamic scaling and resilience.
 
 - **Developer Experience**
