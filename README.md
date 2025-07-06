@@ -16,7 +16,8 @@ For a complete system overview and links to all microservices, please refer to t
 * [Dependencies](#dependencies)
 * [Setting Up Your Environment](#setting-up-your-environment)
   * [Prerequisites](#prerequisites)
-  * [Installation & Running](#installation--running)
+  * [Installation & Running Locally](#installation--running-locally)
+  * [Running with Docker](#running-with-docker)
   * [Environment Variables](#environment-variables)
 * [CI/CD & Deployment](#cicd--deployment)
 * [License](#license)
@@ -70,7 +71,7 @@ Ensure you have the following installed on your machine:
 - [Docker Compose](https://docs.docker.com/compose/)
 
 
-### Installation & Running
+### Installation & Running Locally
 
 1. Clone the repository:
     ```bash
@@ -93,6 +94,22 @@ Ensure you have the following installed on your machine:
     ```
 
    The service will start on http://localhost:8761 using the embedded Tomcat web server.
+
+
+### Running with Docker
+
+1. Build the JAR:
+    ```bash
+   ./gradlew clean build
+    ```
+2. Build the Docker image:
+    ```bash
+   docker build -t vsp-infra-discovery:latest .
+    ```
+3. Run the container:
+    ```bash
+   docker run --rm --name vsp_discovery -p 8761:8761 vsp-infra-discovery:latest
+    ```
 
 
 ### Environment Variables
