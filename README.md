@@ -89,7 +89,6 @@ Ensure you have the following installed on your machine:
     ```
 
 
-run: SPRING_PROFILES_ACTIVE=ci ./gradlew build --no-daemon
 4. Start the service:
     ```bash
     ./gradlew bootRun
