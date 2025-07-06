@@ -13,10 +13,8 @@ info:
 spring:
   application:
     name: infra-discovery
-  config:
-    import:
-      - optional:configserver:${CONFIG_SERVER_URL}
-      - optional:file:./env.properties
+  profiles:
+    active: dev
 
 # Eureka server properties
 eureka:
