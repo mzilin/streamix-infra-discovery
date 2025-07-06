@@ -83,7 +83,7 @@ Ensure you have the following installed on your machine:
     cd vsp-infra-discovery
     ```
 
-3. Build the project:
+3. Build the project and run tests:
     ```bash
     ./gradlew clean build
     ```
@@ -106,7 +106,6 @@ Ensure you have the following installed on your machine:
     ```bash
    docker build -t vsp-infra-discovery:latest .
     ```
-   
 3. Run the container:
     ```bash
    docker run --rm --name vsp_discovery -p 8761:8761 vsp-infra-discovery:latest
