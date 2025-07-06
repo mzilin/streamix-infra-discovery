@@ -98,11 +98,7 @@ Ensure you have the following installed on your machine:
 
 ### Running with Docker
 
-1. Build the JAR:
-    ```bash
-   ./gradlew clean build
-    ```
-2. Build the Docker image:
+1. Build the Docker image:
     ```bash
    docker build -t vsp-infra-discovery:latest .
     ```
