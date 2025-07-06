@@ -16,7 +16,7 @@ For a complete system overview and links to all microservices, please refer to t
 * [Dependencies](#dependencies)
 * [Setting Up Your Environment](#setting-up-your-environment)
   * [Prerequisites](#prerequisites)
-  * [Installation & Running Locally](#installation--running-locally)
+  * [Installation & Running](#installation--running)
   * [Running with Docker](#running-with-docker)
   * [Environment Variables](#environment-variables)
 * [CI/CD & Deployment](#cicd--deployment)
@@ -71,7 +71,7 @@ Ensure you have the following installed on your machine:
 - [Docker Compose](https://docs.docker.com/compose/)
 
 
-### Installation & Running Locally
+### Installation & Running
 
 1. Clone the repository:
     ```bash
