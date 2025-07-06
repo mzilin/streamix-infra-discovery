@@ -86,9 +86,6 @@ Ensure you have the following installed on your machine:
 3. Build the project and run tests:
     ```bash
     ./gradlew clean build
-   
-   
-     
     ```
 
 
