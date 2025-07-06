@@ -15,5 +15,5 @@ COPY --from=build /app/build/libs/vsp-infra-discovery-*.jar app.jar
 RUN chown appuser:appgroup app.jar
 
 USER appuser
-EXPOSE 8080
+EXPOSE 8761
 ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
