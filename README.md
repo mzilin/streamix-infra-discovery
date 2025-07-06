@@ -88,7 +88,6 @@ Ensure you have the following installed on your machine:
     ./gradlew clean build
     ```
 
-
 4. Start the service:
     ```bash
     ./gradlew bootRun
