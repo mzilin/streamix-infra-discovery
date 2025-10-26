@@ -1,12 +1,12 @@
-# Video Streaming Platform – Discovery Service
+# Streamix – Discovery Service
 
-![Build](https://img.shields.io/github/actions/workflow/status/mzilin/vsp-infra-discovery/build.yml?label=Build&logo=github&logoColor=white&style=flat)
+![Build](https://img.shields.io/github/actions/workflow/status/mzilin/streamix-infra-discovery/build.yml?label=Build&logo=github&logoColor=white&style=flat)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen?label=Status)
 
 
-This repository contains the **Discovery** microservice for the **Video Streaming Platform**, deployed in the **Infrastructure** cluster. It acts as the service registry, enabling other microservices to dynamically discover and communicate with each other.
+This repository contains the **Discovery** microservice for the **Streamix** (Video Streaming Platform), deployed in the **Infrastructure** cluster. It acts as the service registry, enabling other microservices to dynamically discover and communicate with each other.
 
-For a complete system overview and links to all microservices, please refer to the [Microservices Hub Repository](https://github.com/mzilin/vsp-microservices-hub).
+For a complete system overview and links to all microservices, please refer to the [Microservices Hub Repository](https://github.com/mzilin/streamix-microservices-hub).
 
 
 ## Table of Contents
@@ -74,12 +74,12 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mzilin/vsp-infra-discovery.git
+    git clone https://github.com/mzilin/streamix-infra-discovery.git
     ```
 
 2. Switch to the `main` branch:
     ```bash
-    cd vsp-infra-discovery
+    cd streamix-infra-discovery
     ```
 
 3. Build the project and run tests:
@@ -99,11 +99,11 @@ Ensure you have the following installed on your machine:
 
 1. Build the Docker image:
     ```bash
-   docker build -t vsp-infra-discovery:latest .
+   docker build -t streamix-infra-discovery:latest .
     ```
 3. Run the container:
     ```bash
-   docker run --rm --name vsp_discovery -p 8761:8761 vsp-infra-discovery:latest
+   docker run --rm --name streamix_discovery -p 8761:8761 streamix-infra-discovery:latest
     ```
 
 
