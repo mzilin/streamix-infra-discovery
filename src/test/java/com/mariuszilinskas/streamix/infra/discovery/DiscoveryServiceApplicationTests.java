@@ -1,4 +1,4 @@
-package com.mariuszilinskas.vsp.infra.discovery;
+package com.mariuszilinskas.streamix.infra.discovery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
