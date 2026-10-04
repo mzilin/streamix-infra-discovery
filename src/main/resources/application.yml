@@ -1,32 +1,30 @@
-# Server properties
+# Server configuration
 server:
   port: 8761
 
-# Information for the info endpoint
+# Application metadata
 info:
   app:
-    environment: DEV
+    environment: ${spring.profiles.active}
     name: ${spring.application.name}
-    description: Discovery Service - Local Instance
+    description: Streamix Eureka Discovery Service
 
-# Spring application properties
+# Spring application and infrastructure configuration
 spring:
   application:
     name: infra-discovery
-  profiles:
-    active: dev
 
-# Eureka server properties
+# Eureka server configuration
 eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-# Management properties
+# Actuator and observability configuration
 management:
   info:
     env:
@@ -36,7 +34,7 @@ management:
       exposure:
         include: info, health
 
-# Logging properties
+# Application logging configuration
 logging:
   level:
     root: INFO
