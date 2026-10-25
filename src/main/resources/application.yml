@@ -5,7 +5,7 @@ server:
 # Application metadata
 info:
   app:
-    environment: ${spring.profiles.active}
+    environment: ${spring.profiles.active:default}
     name: ${spring.application.name}
     description: Streamix Eureka Discovery Service
 
