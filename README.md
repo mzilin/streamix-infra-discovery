@@ -18,7 +18,6 @@ For a complete system overview and links to all microservices, please refer to t
   * [Prerequisites](#prerequisites)
   * [Installation & Running](#installation--running)
   * [Running with Docker](#running-with-docker)
-  * [Environment Variables](#environment-variables)
 * [CI/CD & Deployment](#cicd--deployment)
 * [License](#license)
 * [Contact](#contact)
@@ -77,7 +76,7 @@ Ensure you have the following installed on your machine:
     git clone https://github.com/mzilin/streamix-infra-discovery.git
     ```
 
-2. Switch to the `main` branch:
+2. Navigate into the project directory:
     ```bash
     cd streamix-infra-discovery
     ```
@@ -107,18 +106,11 @@ Ensure you have the following installed on your machine:
     ```
 
 
-### Environment Variables
-
-This microservice requires the following environment variables to be configured:
-
-- **CONFIG_SERVER_URL**: Specifies the URL of the Spring Cloud Config Server. This allows the service to retrieve its configuration dynamically at runtime.
-
-
 ## CI/CD & Deployment
 
 This project uses **GitHub Actions** to automate the build, test and deployment processes, ensuring continuous integration and delivery.
 
-- The **Build** workflow runs on every push and pull request to the `main` and `prod` branches. This step verifies that all commits compile successfully and pass unit tests before they are merged, maintaining code quality.
+- The **Build** workflow runs on every push and pull request to the `main` branch. This step verifies that all commits compile successfully and pass unit tests before they are merged, maintaining code quality.
 - Finally, a **Deploy** workflow is triggered when a pull request is merged into the `prod` branch. It builds a Docker image of the microservice, pushes it to the **AWS ECR** container registry and deploys it to the **AWS ECS** environment.
 
 Branch protections and **GitHub Secrets** are used to manage credentials and safeguard the CI/CD pipelines.
