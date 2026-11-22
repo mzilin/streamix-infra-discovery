@@ -38,6 +38,5 @@ management:
 logging:
   level:
     root: INFO
-    org.springframework: INFO
-    com.mariuszilinskas: INFO
-
+    com.netflix: WARN
+    org.springframework.web.servlet: WARN
